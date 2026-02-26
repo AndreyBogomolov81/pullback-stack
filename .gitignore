@@ -143,3 +143,9 @@ db/
 log/
 
 prettifier.py
+
+# certbot (do not commit certificates/keys)
+certbot/conf/*
+certbot/www/*
+!certbot/conf/.gitkeep
+!certbot/www/.gitkeep
