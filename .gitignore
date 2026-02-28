@@ -145,7 +145,19 @@ log/
 prettifier.py
 
 # certbot (do not commit certificates/keys)
-certbot/conf/*
-certbot/www/*
+certbot/conf/
+certbot/conf/**
+certbot/www/
+certbot/www/**
 !certbot/conf/.gitkeep
 !certbot/www/.gitkeep
+
+# secrets / keys
+*.key
+*.pem
+*.p12
+*.pfx
+
+# env variants
+.env.*
+*.env
